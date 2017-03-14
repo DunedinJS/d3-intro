@@ -20,5 +20,7 @@ export default function chart1(id) {
     // create the DOM element for each datum
     .append('div')
     // set inline style height for each div element based on the corresponding datum
-    .style('height', d => `${d}px`);
+    .style('height', d => `${d}px`)
+    // set the title attribute so that the value can be seen on mouse hover
+    .attr('title', d => d);
 }

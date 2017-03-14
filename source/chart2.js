@@ -21,5 +21,6 @@ export default function chart2(id) {
     .enter()
     .append('div')
     // identical to chart 1 except the scale is applied to the datum
-    .style('height', d => `${scaleHeight(d)}px`);
+    .style('height', d => `${scaleHeight(d)}px`)
+    .attr('title', d => d);
 }
