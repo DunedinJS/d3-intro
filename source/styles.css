@@ -7,3 +7,9 @@ body {
   margin: 0 auto;
 }
 
+#chart1 div {
+  display: inline-block;
+  background: red;
+  width: 30px;
+  margin-right: 5px;
+}
