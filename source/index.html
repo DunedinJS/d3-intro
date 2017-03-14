@@ -26,12 +26,11 @@
         <p>Inspect this chart with your browser's developer tools.<br>
           You will see that the <code>#chart1</code> element contains a separate <code>&lt;div&gt;</code>
           for each of the eight random values in the data set and their heights are determined by those values.</p>
-        <p>Also see the documented source code in <code>source/chart1.js</code><br>
-          You can access this through your developer tools. In Chrome you'll find this in the Sources tab under <code>webpack://</code> host and <code>.</code> directory.</p>
+        <p>Also see the documented source code in <code>source/chart1.js</code></p>
       </section>
 
       <blockquote>
-        <p>An issue which you might have noticed in Chart 1 is that the chart height is determined by the data.
+        <p>An issue which you might have noticed in Chart 1 is that the chart height relates directly to the largest data value.
           For example in <code>source/chart1.js</code>, change <code>const max = 1000;</code>.
           You will see that the chart is rendered much taller because the values are much larger numbers.</p>
         <p>This leads us into Chart 2 which introduces scales.</p>
@@ -42,6 +41,9 @@
         <p>A simple HTML bar chart with scaling of the bar heights.</p>
         <div id="chart2"></div>
         <p>See the documented source code in <code>source/chart2.js</code></p>
+        <p>A linear scale is used here to determine the bar heights.
+          No matter what the largest value is, its bar will have a height of 100 pixels.</p>
+        <p>D3 also provides other scale types such as time, and logarithmic.</p>
       </section>
     </div>
   </body>
