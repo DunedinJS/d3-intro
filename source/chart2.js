@@ -15,6 +15,10 @@ export default function chart2(id) {
     .domain([0, maxValue]) // the expected data values range between 0 and the maximum value
     .range([0, height]); // the output range (pixel height values)
 
+  // calling scaleHeight(0) would return 0
+  // calling scaleHeight(maxValue) would return the value of the height constant
+  // calling scaleHeight with any number between would return a number scaled to the range in a linear manner
+
   d3.select(id)
     .selectAll('div')
     .data(data)
