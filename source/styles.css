@@ -1,3 +1,7 @@
+html {
+  line-height: 1.6;
+}
+
 body {
   padding: 2em;
 }
@@ -5,6 +9,16 @@ body {
 .wrapper {
   max-width: 50em;
   margin: 0 auto;
+}
+
+section {
+  margin: 4em 0;
+}
+
+blockquote {
+  background: #ddd;
+  margin: 4em 0;
+  padding: 2em;
 }
 
 #chart1 div,
