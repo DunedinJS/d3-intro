@@ -35,7 +35,10 @@ module.exports = (env) => {
     devtool: 'source-map',
 
     plugins: [
-      new HtmlWebpackPlugin()
+      new HtmlWebpackPlugin({
+        template: 'index.html',
+      }),
+      new ExtractTextPlugin('[name]-[contenthash:8].css'),
     ],
   };
 };
