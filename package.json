@@ -1,7 +1,7 @@
 {
   "name": "d3-intro",
   "version": "0.0.1",
-  "description": "Intro to D3",
+  "description": "An introduction to D3",
   "main": "source/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
