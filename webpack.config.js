@@ -5,11 +5,13 @@ module.exports = (env) => {
   return {
     context: path.resolve(__dirname, 'source'),
 
-    entry: '.',
+    entry: {
+      app: ['.'],
+    },
 
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'bundle.js',
+      filename: '[name]-[hash:8].js',
     },
 
     module: {

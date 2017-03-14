@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --host 0.0.0.0 --progress",
-    "build": "webpack"
+    "build": "rm -rf ./dist; webpack"
   },
   "author": "matt@mnorrish.co.nz",
   "license": "MIT",
