@@ -20,6 +20,6 @@
     "webpack-dev-server": "2.4.1"
   },
   "dependencies": {
-    "d3-selection": "1.0.5"
+    "d3": "4.7.3"
   }
 }
