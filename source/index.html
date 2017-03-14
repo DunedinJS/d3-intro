@@ -29,6 +29,20 @@
         <p>Also see the documented source code in <code>source/chart1.js</code><br>
           You can access this through your developer tools. In Chrome you'll find this in the Sources tab under <code>webpack://</code> host and <code>.</code> directory.</p>
       </section>
+
+      <blockquote>
+        <p>An issue which you might have noticed in Chart 1 is that the chart height is determined by the data.
+          For example in <code>source/chart1.js</code>, change <code>const max = 1000;</code>.
+          You will see that the chart is rendered much taller because the values are much larger numbers.</p>
+        <p>This leads us into Chart 2 which introduces scales.</p>
+      </blockquote>
+
+      <section>
+        <h2>Chart 2</h2>
+        <p>A simple HTML bar chart with scaling of the bar heights.</p>
+        <div id="chart2"></div>
+        <p>See the documented source code in <code>source/chart2.js</code></p>
+      </section>
     </div>
   </body>
 </html>
