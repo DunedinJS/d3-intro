@@ -32,3 +32,9 @@ code {
   width: 30px;
   margin-right: 5px;
 }
+
+#chart3 path {
+  fill: transparent;
+  stroke: red;
+  stroke-width: 1;
+}
