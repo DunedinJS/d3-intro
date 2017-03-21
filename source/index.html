@@ -50,12 +50,24 @@
 
       <section>
         <h2>Chart 3 &mdash; SVG line chart</h2>
-        <p>A simple line chart which plots values over time. This renders an inline SVG and draws a path from the data.</p>
+        <p>A simple line chart which plots values over time.
+          This renders an inline SVG and draws a path from the data.
+          SVG graphics are used because they offer much more visual features than plain HTML elements.</p>
         <p>A linear scale is used here to scale the X axis to the chart height and a time scale is used to scale Y axis to the chart width.</p>
         <p>The path drawn with a straight lines between points but it is also possible to specify other curve functions.
           See the <a href="https://github.com/d3/d3-shape/blob/master/README.md#curves" target="_blank">D3 curves documentation</a> for details.</p>
         <div id="chart3"></div>
         <p>See the documented source code in <code>source/chart3.js</code></p>
+      </section>
+
+      <section>
+        <h2>Chart 4 &mdash; SVG heatmap</h2>
+        <p>A heatmap which plots values over time.</p>
+        <p>D3 provides an extensive set of interpolations functions for blending between to values.
+          Here we use <code>d3.interpolateRgb</code> to determine which colour each tile should be based on its value.<br>
+          See the <a href="https://github.com/d3/d3-interpolate/blob/master/README.md#d3-interpolate" target="_blank">D3 interpolate documentation</a> for details.</p>
+        <div id="chart4"></div>
+        <p>See the documented source code in <code>source/chart4.js</code></p>
       </section>
     </div>
   </body>

@@ -8,7 +8,7 @@ const width = 300; // the pixel width to render the chart
 const dateInterval = 24 * 60 * 60 * 1000; // number of milliseconds in a day
 
 export default function chart3(id) {
-  // generate an array of twenty dated objects with random values between 0 and the max value
+  // generate an array of dated objects with random values between 0 and the max value
   const data = Array(dataPointCount).fill(null).map((value, index) => ({
     value: Math.floor(Math.random() * max),
     date: new Date(index * dateInterval),
