@@ -17,10 +17,13 @@ export default function chart1(id) {
     // because the selection is empty it gives placeholders for all eight items
     .enter()
     // now we perform DOM manipulations based on each datum
-    // create the DOM element for each datum
+    // create the bar element for each datum
     .append('div')
-    // set inline style height for each div element based on the corresponding datum
+    .attr('class', 'bar')
+    // set inline style height for each bar element based on the corresponding datum
     .style('height', d => `${d}px`)
-    // set the title attribute so that the value can be seen on mouse hover
-    .attr('title', d => d);
+    // append the label element to each bar
+    .append('div')
+    .attr('class', 'label')
+    .text(d => d);
 }

@@ -33,12 +33,22 @@ th {
   text-align: left;
 }
 
-#chart1 div,
-#chart2 div {
+#chart1 .bar,
+#chart2 .bar {
   display: inline-block;
   background: red;
   width: 30px;
-  margin-right: 5px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#chart1 .label,
+#chart2 .label {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 60%;
 }
 
 #chart3 path {
