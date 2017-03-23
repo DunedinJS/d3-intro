@@ -25,6 +25,14 @@ code {
   color: #099;
 }
 
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
 #chart1 div,
 #chart2 div {
   display: inline-block;

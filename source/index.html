@@ -28,14 +28,14 @@
           You will see that the <code>#chart1</code> element contains a separate <code>&lt;div&gt;</code>
           for each of the eight random values in the data set and their heights are determined by those values.</p>
         <p>Also see the documented source code in <code>source/chart1.js</code></p>
+      
+        <blockquote>
+          <p>An issue which you might have noticed in Chart 1 is that the chart height relates directly to the largest data value.</p>
+          <p>For example in <code>source/chart1.js</code>, change <code>const max = 1000;</code>.<br>
+            You will see that the chart is rendered much taller because the values are much larger numbers.</p>
+          <p>This leads us into Chart 2 which introduces scales.</p>
+        </blockquote>
       </section>
-
-      <blockquote>
-        <p>An issue which you might have noticed in Chart 1 is that the chart height relates directly to the largest data value.</p>
-        <p>For example in <code>source/chart1.js</code>, change <code>const max = 1000;</code>.<br>
-          You will see that the chart is rendered much taller because the values are much larger numbers.</p>
-        <p>This leads us into Chart 2 which introduces scales.</p>
-      </blockquote>
 
       <section>
         <h2>Chart 2 &mdash; HTML bar chart with scaling</h2>
@@ -46,6 +46,36 @@
         <div id="chart2"></div>
         <p>Hover over the bars to see their values.</p>
         <p>See the documented source code in <code>source/chart2.js</code></p>
+
+        <blockquote>
+          <p>Scales are one of the most frequently used features of D3.</p>
+          <p>In essence a scale accepts a number within an expected 'domain' (between a minimum and maximum) and
+            returns a number within an expected 'range'.</p>
+          <p>For example, a scale with a domain of <code>[-100, 100]</code> and a range of <code>[0, 1]</code>
+            would return values like below:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Input value</th>
+                <th>Return value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>-100</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>0.5</td>
+              </tr>
+              <tr>
+                <td>100</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </blockquote>
       </section>
 
       <section>
